@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration dubug="false">
+    <!--定义日志文件的存储地址 勿在 LogBack 的配置中使用相对路径-->
+    <property name="LOG_INFO_HOME" value="./infoLogs" />
+    <property name="LOG_ERROR_HOME" value="./errorLogs" />
+
+    <!-- 控制台输出 -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符-->
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg  %n</pattern>
+        </encoder>
+    </appender>
+    <!-- 配置除error以外的日志 -->
+    <appender name="fileInfoLog" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_INFO_HOME}/info.log</file>
+        <!-- 为了把info 和 error分开保存，这里需要配置filter标签，过滤器类选择 级别过滤 -->
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <!-- 对于error级别，如果匹配到就拒绝接受，如果不是error就收下 -->
+            <level>ERROR</level>
+            <onMatch>DENY</onMatch>
+            <onMismatch>ACCEPT</onMismatch>
+        </filter>
+        <encoder>
+            <pattern>
+                %d{yyyy-MM-dd HH:mm:ss.SSS} %5p [%t] %c{1}:%L - %m%n
+            </pattern>
+        </encoder>
+        <!-- 设置滚动策略为 按日期滚动 -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- 文件路径，文件名中加入%d,将日期添加进文件名中  下面是基于大小和时间的记录文件归档。-->
+            <fileNamePattern>
+                ${LOG_INFO_HOME}/info.%d.log
+            </fileNamePattern>
+            <!--<timeBasedFileNamingAndTriggeringPolic class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNAT">-->
+            <!--<maxFileSize>10M</maxFileSize>-->
+            <!--</timeBasedFileNamingAndTriggeringPolic>-->
+        </rollingPolicy>
+    </appender>
+    <!--配置error级别-->
+    <appender name="fileErrorLog" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_ERROR_HOME}/error.log</file>
+        <!-- 过滤器级别选择 临界值过滤器，过滤掉低于error级别的日志 -->
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>
+                ERROR
+            </level>
+        </filter>
+
+        <encoder>
+            <pattern>
+                %d{yyyy-MM-dd HH:mm:ss.SSS} %5p [%t] %c{1}:%L - %m%n
+            </pattern>
+        </encoder>
+        <!-- 滚动策略也是设置成按日期滚动 -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- 文件路径 -->
+            <fileNamePattern>
+               ${LOG_ERROR_HOME}error.%d.log
+                <!--logger\error.%d.log-->
+            </fileNamePattern>
+            <maxHistory>1</maxHistory>
+        </rollingPolicy>
+    </appender>
+
+
+
+
+    <!-- 按照每天生成日志文件 -->
+    <appender name="FILE"  class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!--日志文件输出的文件名-->
+            <FileNamePattern>${LOG_HOME}/runtime.log.%d{yyyy-MM-dd}.log</FileNamePattern>
+            <!--日志文件保留天数-->
+            <MaxHistory>3</MaxHistory>
+        </rollingPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符-->
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n</pattern>
+        </encoder>
+        <!--日志文件最大的大小-->
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <MaxFileSize>1MB</MaxFileSize>
+        </triggeringPolicy>
+    </appender>
+
+    <!-- 日志输出级别 -->
+    <root level="INFO">
+        <appender-ref ref="STDOUT" />
+        <appender-ref ref="FILE" />
+        <appender-ref ref="fileInfoLog" />
+        <appender-ref ref="fileErrorLog" />
+    </root>
+</configuration>

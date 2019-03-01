@@ -1,0 +1,484 @@
+2019-02-28 10:56:44.373  INFO [main] c.l.d.DatebaseApplication:50 - Starting DatebaseApplication on XXBlI1-liuzy with PID 26036 (E:\idea\Demo\datebase\target\classes started by lenovo in E:\idea\Demo\datebase)
+2019-02-28 10:56:44.376  INFO [main] c.l.d.DatebaseApplication:675 - No active profile set, falling back to default profiles: default
+2019-02-28 10:56:44.771  INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-28 10:56:44.815  INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 39ms. Found 1 repository interfaces.
+2019-02-28 10:56:45.009  INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a3c02c2c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-28 10:56:45.213  INFO [main] o.s.b.w.e.t.TomcatWebServer:90 - Tomcat initialized with port(s): 8080 (http)
+2019-02-28 10:56:45.224  INFO [main] o.a.c.h.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2019-02-28 10:56:45.231  INFO [main] o.a.c.c.StandardService:173 - Starting service [Tomcat]
+2019-02-28 10:56:45.232  INFO [main] o.a.c.c.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-02-28 10:56:45.237  INFO [main] o.a.c.c.AprLifecycleListener:173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\jdk\jdk\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\app\lenovo\product\11.2.0\client_2;E:\app\lenovo\product\11.2.0\client_2\bin;E:\app\lenovo\product\11.2.0\client_1;E:\app\lenovo\product\11.2.0\client_1\bin;E:\app\lenovo\product\11.2.0\dbhome_1\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;E:\idea\Maven\apache-maven-3.5.4-bin\apache-maven-3.5.4\bin;E:\jdk\jdk\bin;E:\jdk\jdk\jre\bin;E:\rabbitmq\erlang\erl10.2\bin;E:\idea\consul;E:\idea\Jmeter\apache-jmeter-5.0\bin;C:\Users\lenovo\AppData\Local\Microsoft\WindowsApps;;.]
+2019-02-28 10:56:45.448  INFO [main] o.a.j.s.TldScanner:173 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-02-28 10:56:45.451  INFO [main] o.a.c.c.C.[.[.[/]:173 - Initializing Spring embedded WebApplicationContext
+2019-02-28 10:56:45.451  INFO [main] o.s.w.c.ContextLoader:296 - Root WebApplicationContext: initialization completed in 1051 ms
+2019-02-28 10:56:45.591  INFO [main] c.a.d.p.DruidDataSource:106 - {dataSource-1} inited
+2019-02-28 10:56:45.723  INFO [main] o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-28 10:56:45.758  INFO [main] o.h.Version:46 - HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-28 10:56:45.759  INFO [main] o.h.c.Environment:213 - HHH000206: hibernate.properties not found
+2019-02-28 10:56:45.838  INFO [main] o.h.a.c.Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-28 10:56:45.915  INFO [main] o.h.d.Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-02-28 10:56:46.238  INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean:415 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-02-28 10:56:46.355  WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration:236 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-02-28 10:56:46.601  INFO [main] o.a.c.h.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8080"]
+2019-02-28 10:56:46.624  INFO [main] o.s.b.w.e.t.TomcatWebServer:204 - Tomcat started on port(s): 8080 (http) with context path ''
+2019-02-28 10:56:46.625  INFO [main] c.l.d.DatebaseApplication:59 - Started DatebaseApplication in 2.518 seconds (JVM running for 3.317)
+2019-02-28 10:58:16.458  INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-02-28 10:58:16.459  INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2019-02-28 10:58:16.463  INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet:546 - Completed initialization in 4 ms
+2019-02-28 10:58:16.513  INFO [http-nio-8080-exec-1] c.l.d.c.IndexController:45 - 123333------------------------------------
+2019-02-28 10:58:26.113  INFO [http-nio-8080-exec-3] c.l.d.c.IndexController:45 - 123333------------------------------------
+2019-02-28 10:58:29.153  WARN [http-nio-8080-exec-4] o.s.w.s.PageNotFound:1248 - No mapping for GET /index/log
+2019-02-28 10:58:36.405  WARN [http-nio-8080-exec-10] o.s.w.s.PageNotFound:1248 - No mapping for GET /index/log
+2019-02-28 11:01:15.782  WARN [http-nio-8080-exec-8] o.s.w.s.PageNotFound:1248 - No mapping for GET /index/log
+2019-02-28 11:02:32.759  INFO [main] c.l.d.DatebaseApplication:50 - Starting DatebaseApplication on XXBlI1-liuzy with PID 24960 (E:\idea\Demo\datebase\target\classes started by lenovo in E:\idea\Demo\datebase)
+2019-02-28 11:02:32.762  INFO [main] c.l.d.DatebaseApplication:675 - No active profile set, falling back to default profiles: default
+2019-02-28 11:02:33.169  INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-28 11:02:33.216  INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 43ms. Found 1 repository interfaces.
+2019-02-28 11:02:33.417  INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a93af6ce] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-28 11:02:33.619  INFO [main] o.s.b.w.e.t.TomcatWebServer:90 - Tomcat initialized with port(s): 8080 (http)
+2019-02-28 11:02:33.629  INFO [main] o.a.c.h.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2019-02-28 11:02:33.634  INFO [main] o.a.c.c.StandardService:173 - Starting service [Tomcat]
+2019-02-28 11:02:33.635  INFO [main] o.a.c.c.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-02-28 11:02:33.639  INFO [main] o.a.c.c.AprLifecycleListener:173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\jdk\jdk\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\app\lenovo\product\11.2.0\client_2;E:\app\lenovo\product\11.2.0\client_2\bin;E:\app\lenovo\product\11.2.0\client_1;E:\app\lenovo\product\11.2.0\client_1\bin;E:\app\lenovo\product\11.2.0\dbhome_1\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;E:\idea\Maven\apache-maven-3.5.4-bin\apache-maven-3.5.4\bin;E:\jdk\jdk\bin;E:\jdk\jdk\jre\bin;E:\rabbitmq\erlang\erl10.2\bin;E:\idea\consul;E:\idea\Jmeter\apache-jmeter-5.0\bin;C:\Users\lenovo\AppData\Local\Microsoft\WindowsApps;;.]
+2019-02-28 11:02:33.853  INFO [main] o.a.j.s.TldScanner:173 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-02-28 11:02:33.856  INFO [main] o.a.c.c.C.[.[.[/]:173 - Initializing Spring embedded WebApplicationContext
+2019-02-28 11:02:33.856  INFO [main] o.s.w.c.ContextLoader:296 - Root WebApplicationContext: initialization completed in 1071 ms
+2019-02-28 11:02:34.008  INFO [main] c.a.d.p.DruidDataSource:106 - {dataSource-1} inited
+2019-02-28 11:02:34.145  INFO [main] o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-28 11:02:34.180  INFO [main] o.h.Version:46 - HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-28 11:02:34.181  INFO [main] o.h.c.Environment:213 - HHH000206: hibernate.properties not found
+2019-02-28 11:02:34.259  INFO [main] o.h.a.c.Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-28 11:02:34.336  INFO [main] o.h.d.Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-02-28 11:02:34.664  INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean:415 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-02-28 11:02:34.781  WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration:236 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-02-28 11:02:35.034  INFO [main] o.a.c.h.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8080"]
+2019-02-28 11:02:35.074  INFO [main] o.s.b.w.e.t.TomcatWebServer:204 - Tomcat started on port(s): 8080 (http) with context path ''
+2019-02-28 11:02:35.076  INFO [main] c.l.d.DatebaseApplication:59 - Started DatebaseApplication in 2.565 seconds (JVM running for 3.367)
+2019-02-28 11:02:51.755  INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-02-28 11:02:51.756  INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2019-02-28 11:02:51.760  INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet:546 - Completed initialization in 4 ms
+2019-02-28 11:02:51.769  WARN [http-nio-8080-exec-1] o.s.w.s.PageNotFound:1248 - No mapping for GET /index/log
+2019-02-28 11:05:16.164  INFO [main] c.l.d.DatebaseApplication:50 - Starting DatebaseApplication on XXBlI1-liuzy with PID 23472 (E:\idea\Demo\datebase\target\classes started by lenovo in E:\idea\Demo\datebase)
+2019-02-28 11:05:16.166  INFO [main] c.l.d.DatebaseApplication:675 - No active profile set, falling back to default profiles: default
+2019-02-28 11:05:16.551  INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-28 11:05:16.595  INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 39ms. Found 1 repository interfaces.
+2019-02-28 11:05:16.807  INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d1eba52e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-28 11:05:17.007  INFO [main] o.s.b.w.e.t.TomcatWebServer:90 - Tomcat initialized with port(s): 8080 (http)
+2019-02-28 11:05:17.016  INFO [main] o.a.c.h.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2019-02-28 11:05:17.021  INFO [main] o.a.c.c.StandardService:173 - Starting service [Tomcat]
+2019-02-28 11:05:17.022  INFO [main] o.a.c.c.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-02-28 11:05:17.026  INFO [main] o.a.c.c.AprLifecycleListener:173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\jdk\jdk\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\app\lenovo\product\11.2.0\client_2;E:\app\lenovo\product\11.2.0\client_2\bin;E:\app\lenovo\product\11.2.0\client_1;E:\app\lenovo\product\11.2.0\client_1\bin;E:\app\lenovo\product\11.2.0\dbhome_1\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;E:\idea\Maven\apache-maven-3.5.4-bin\apache-maven-3.5.4\bin;E:\jdk\jdk\bin;E:\jdk\jdk\jre\bin;E:\rabbitmq\erlang\erl10.2\bin;E:\idea\consul;E:\idea\Jmeter\apache-jmeter-5.0\bin;C:\Users\lenovo\AppData\Local\Microsoft\WindowsApps;;.]
+2019-02-28 11:05:17.237  INFO [main] o.a.j.s.TldScanner:173 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-02-28 11:05:17.240  INFO [main] o.a.c.c.C.[.[.[/]:173 - Initializing Spring embedded WebApplicationContext
+2019-02-28 11:05:17.241  INFO [main] o.s.w.c.ContextLoader:296 - Root WebApplicationContext: initialization completed in 1052 ms
+2019-02-28 11:05:17.382  INFO [main] c.a.d.p.DruidDataSource:106 - {dataSource-1} inited
+2019-02-28 11:05:17.516  INFO [main] o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-28 11:05:17.553  INFO [main] o.h.Version:46 - HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-28 11:05:17.554  INFO [main] o.h.c.Environment:213 - HHH000206: hibernate.properties not found
+2019-02-28 11:05:17.632  INFO [main] o.h.a.c.Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-28 11:05:17.708  INFO [main] o.h.d.Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-02-28 11:05:18.043  INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean:415 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-02-28 11:05:18.162  WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration:236 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-02-28 11:05:18.399  INFO [main] o.a.c.h.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8080"]
+2019-02-28 11:05:18.437  INFO [main] o.s.b.w.e.t.TomcatWebServer:204 - Tomcat started on port(s): 8080 (http) with context path ''
+2019-02-28 11:05:18.439  INFO [main] c.l.d.DatebaseApplication:59 - Started DatebaseApplication in 2.528 seconds (JVM running for 3.342)
+2019-02-28 11:05:24.743  INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-02-28 11:05:24.744  INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2019-02-28 11:05:24.751  INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet:546 - Completed initialization in 7 ms
+2019-02-28 11:05:24.801  INFO [http-nio-8080-exec-1] c.l.d.c.IndexController:47 - 123333------------------------------------
+2019-02-28 11:06:46.989  INFO [main] c.l.d.DatebaseApplication:50 - Starting DatebaseApplication on XXBlI1-liuzy with PID 24756 (E:\idea\Demo\datebase\target\classes started by lenovo in E:\idea\Demo\datebase)
+2019-02-28 11:06:46.992 DEBUG [main] c.l.d.DatebaseApplication:53 - Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2019-02-28 11:06:46.992  INFO [main] c.l.d.DatebaseApplication:675 - No active profile set, falling back to default profiles: default
+2019-02-28 11:06:47.385  INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-28 11:06:47.433  INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 44ms. Found 1 repository interfaces.
+2019-02-28 11:06:47.620  INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2077afe8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-28 11:06:47.822  INFO [main] o.s.b.w.e.t.TomcatWebServer:90 - Tomcat initialized with port(s): 8080 (http)
+2019-02-28 11:06:47.832  INFO [main] o.a.c.h.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2019-02-28 11:06:47.838  INFO [main] o.a.c.c.StandardService:173 - Starting service [Tomcat]
+2019-02-28 11:06:47.838  INFO [main] o.a.c.c.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-02-28 11:06:47.842  INFO [main] o.a.c.c.AprLifecycleListener:173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\jdk\jdk\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\app\lenovo\product\11.2.0\client_2;E:\app\lenovo\product\11.2.0\client_2\bin;E:\app\lenovo\product\11.2.0\client_1;E:\app\lenovo\product\11.2.0\client_1\bin;E:\app\lenovo\product\11.2.0\dbhome_1\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;E:\idea\Maven\apache-maven-3.5.4-bin\apache-maven-3.5.4\bin;E:\jdk\jdk\bin;E:\jdk\jdk\jre\bin;E:\rabbitmq\erlang\erl10.2\bin;E:\idea\consul;E:\idea\Jmeter\apache-jmeter-5.0\bin;C:\Users\lenovo\AppData\Local\Microsoft\WindowsApps;;.]
+2019-02-28 11:06:48.056  INFO [main] o.a.j.s.TldScanner:173 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-02-28 11:06:48.058  INFO [main] o.a.c.c.C.[.[.[/]:173 - Initializing Spring embedded WebApplicationContext
+2019-02-28 11:06:48.059  INFO [main] o.s.w.c.ContextLoader:296 - Root WebApplicationContext: initialization completed in 1042 ms
+2019-02-28 11:06:48.204  INFO [main] c.a.d.p.DruidDataSource:106 - {dataSource-1} inited
+2019-02-28 11:06:48.332  INFO [main] o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-28 11:06:48.367  INFO [main] o.h.Version:46 - HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-28 11:06:48.368  INFO [main] o.h.c.Environment:213 - HHH000206: hibernate.properties not found
+2019-02-28 11:06:48.443  INFO [main] o.h.a.c.Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-28 11:06:48.518  INFO [main] o.h.d.Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-02-28 11:06:48.845  INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean:415 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-02-28 11:06:48.955  WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration:236 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-02-28 11:06:49.204  INFO [main] o.a.c.h.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8080"]
+2019-02-28 11:06:49.228  INFO [main] o.s.b.w.e.t.TomcatWebServer:204 - Tomcat started on port(s): 8080 (http) with context path ''
+2019-02-28 11:06:49.229  INFO [main] c.l.d.DatebaseApplication:59 - Started DatebaseApplication in 2.523 seconds (JVM running for 3.349)
+2019-02-28 11:07:11.303  INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-02-28 11:07:11.303  INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2019-02-28 11:07:11.308  INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet:546 - Completed initialization in 5 ms
+2019-02-28 11:07:11.355  INFO [http-nio-8080-exec-1] c.l.d.c.IndexController:47 - 123333------------------------------------
+2019-02-28 11:07:33.625  INFO [http-nio-8080-exec-2] c.l.d.c.IndexController:47 - 123333------------------------------------
+2019-02-28 11:07:33.676  WARN [http-nio-8080-exec-3] o.s.w.s.PageNotFound:1248 - No mapping for GET /favicon.ico
+2019-02-28 11:07:45.029  INFO [http-nio-8080-exec-7] c.l.d.c.IndexController:47 - 123333------------------------------------
+2019-02-28 11:09:00.017  INFO [main] c.l.d.DatebaseApplication:50 - Starting DatebaseApplication on XXBlI1-liuzy with PID 11836 (E:\idea\Demo\datebase\target\classes started by lenovo in E:\idea\Demo\datebase)
+2019-02-28 11:09:00.020  INFO [main] c.l.d.DatebaseApplication:675 - No active profile set, falling back to default profiles: default
+2019-02-28 11:09:00.423  INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-28 11:09:00.474  INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 46ms. Found 1 repository interfaces.
+2019-02-28 11:09:00.667  INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8af86c2a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-28 11:09:00.873  INFO [main] o.s.b.w.e.t.TomcatWebServer:90 - Tomcat initialized with port(s): 8080 (http)
+2019-02-28 11:09:00.885  INFO [main] o.a.c.h.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2019-02-28 11:09:00.892  INFO [main] o.a.c.c.StandardService:173 - Starting service [Tomcat]
+2019-02-28 11:09:00.892  INFO [main] o.a.c.c.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-02-28 11:09:00.897  INFO [main] o.a.c.c.AprLifecycleListener:173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\jdk\jdk\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\app\lenovo\product\11.2.0\client_2;E:\app\lenovo\product\11.2.0\client_2\bin;E:\app\lenovo\product\11.2.0\client_1;E:\app\lenovo\product\11.2.0\client_1\bin;E:\app\lenovo\product\11.2.0\dbhome_1\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;E:\idea\Maven\apache-maven-3.5.4-bin\apache-maven-3.5.4\bin;E:\jdk\jdk\bin;E:\jdk\jdk\jre\bin;E:\rabbitmq\erlang\erl10.2\bin;E:\idea\consul;E:\idea\Jmeter\apache-jmeter-5.0\bin;C:\Users\lenovo\AppData\Local\Microsoft\WindowsApps;;.]
+2019-02-28 11:09:01.112  INFO [main] o.a.j.s.TldScanner:173 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-02-28 11:09:01.115  INFO [main] o.a.c.c.C.[.[.[/]:173 - Initializing Spring embedded WebApplicationContext
+2019-02-28 11:09:01.115  INFO [main] o.s.w.c.ContextLoader:296 - Root WebApplicationContext: initialization completed in 1068 ms
+2019-02-28 11:09:01.256  INFO [main] c.a.d.p.DruidDataSource:106 - {dataSource-1} inited
+2019-02-28 11:09:01.389  INFO [main] o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-28 11:09:01.425  INFO [main] o.h.Version:46 - HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-28 11:09:01.426  INFO [main] o.h.c.Environment:213 - HHH000206: hibernate.properties not found
+2019-02-28 11:09:01.503  INFO [main] o.h.a.c.Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-28 11:09:01.586  INFO [main] o.h.d.Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-02-28 11:09:01.917  INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean:415 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-02-28 11:09:02.031  WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration:236 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-02-28 11:09:02.279  INFO [main] o.a.c.h.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8080"]
+2019-02-28 11:09:02.303  INFO [main] o.s.b.w.e.t.TomcatWebServer:204 - Tomcat started on port(s): 8080 (http) with context path ''
+2019-02-28 11:09:02.304  INFO [main] c.l.d.DatebaseApplication:59 - Started DatebaseApplication in 2.561 seconds (JVM running for 3.393)
+2019-02-28 11:09:11.456  INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-02-28 11:09:11.456  INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2019-02-28 11:09:11.460  INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet:546 - Completed initialization in 4 ms
+2019-02-28 11:09:11.512  INFO [http-nio-8080-exec-1] c.l.d.c.IndexController:47 - 123333------------------------------------
+2019-02-28 11:10:40.407  INFO [main] c.l.d.DatebaseApplication:50 - Starting DatebaseApplication on XXBlI1-liuzy with PID 11316 (E:\idea\Demo\datebase\target\classes started by lenovo in E:\idea\Demo\datebase)
+2019-02-28 11:10:40.409 DEBUG [main] c.l.d.DatebaseApplication:53 - Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2019-02-28 11:10:40.410  INFO [main] c.l.d.DatebaseApplication:675 - No active profile set, falling back to default profiles: default
+2019-02-28 11:10:40.859  INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-28 11:10:40.906  INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 42ms. Found 1 repository interfaces.
+2019-02-28 11:10:41.130  INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4b167bc8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-28 11:10:41.337  INFO [main] o.s.b.w.e.t.TomcatWebServer:90 - Tomcat initialized with port(s): 8080 (http)
+2019-02-28 11:10:41.347  INFO [main] o.a.c.h.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2019-02-28 11:10:41.353  INFO [main] o.a.c.c.StandardService:173 - Starting service [Tomcat]
+2019-02-28 11:10:41.353  INFO [main] o.a.c.c.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-02-28 11:10:41.358  INFO [main] o.a.c.c.AprLifecycleListener:173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\jdk\jdk\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\app\lenovo\product\11.2.0\client_2;E:\app\lenovo\product\11.2.0\client_2\bin;E:\app\lenovo\product\11.2.0\client_1;E:\app\lenovo\product\11.2.0\client_1\bin;E:\app\lenovo\product\11.2.0\dbhome_1\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;E:\idea\Maven\apache-maven-3.5.4-bin\apache-maven-3.5.4\bin;E:\jdk\jdk\bin;E:\jdk\jdk\jre\bin;E:\rabbitmq\erlang\erl10.2\bin;E:\idea\consul;E:\idea\Jmeter\apache-jmeter-5.0\bin;C:\Users\lenovo\AppData\Local\Microsoft\WindowsApps;;.]
+2019-02-28 11:10:41.571  INFO [main] o.a.j.s.TldScanner:173 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-02-28 11:10:41.574  INFO [main] o.a.c.c.C.[.[.[/]:173 - Initializing Spring embedded WebApplicationContext
+2019-02-28 11:10:41.575  INFO [main] o.s.w.c.ContextLoader:296 - Root WebApplicationContext: initialization completed in 1141 ms
+2019-02-28 11:10:41.721  INFO [main] c.a.d.p.DruidDataSource:106 - {dataSource-1} inited
+2019-02-28 11:10:41.859  INFO [main] o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-28 11:10:41.895  INFO [main] o.h.Version:46 - HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-28 11:10:41.896  INFO [main] o.h.c.Environment:213 - HHH000206: hibernate.properties not found
+2019-02-28 11:10:41.970  INFO [main] o.h.a.c.Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-28 11:10:42.044  INFO [main] o.h.d.Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-02-28 11:10:42.380  INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean:415 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-02-28 11:10:42.489  WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration:236 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-02-28 11:10:42.728  INFO [main] o.a.c.h.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8080"]
+2019-02-28 11:10:42.767  INFO [main] o.s.b.w.e.t.TomcatWebServer:204 - Tomcat started on port(s): 8080 (http) with context path ''
+2019-02-28 11:10:42.768  INFO [main] c.l.d.DatebaseApplication:59 - Started DatebaseApplication in 2.615 seconds (JVM running for 3.497)
+2019-02-28 11:10:53.431  INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-02-28 11:10:53.431  INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2019-02-28 11:10:53.437  INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet:546 - Completed initialization in 5 ms
+2019-02-28 11:10:53.482  INFO [http-nio-8080-exec-1] c.l.d.c.IndexController:47 - 123333------------------------------------
+2019-02-28 11:13:13.819  INFO [main] c.l.d.DatebaseApplication:50 - Starting DatebaseApplication on XXBlI1-liuzy with PID 20796 (E:\idea\Demo\datebase\target\classes started by lenovo in E:\idea\Demo\datebase)
+2019-02-28 11:13:13.822 DEBUG [main] c.l.d.DatebaseApplication:53 - Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2019-02-28 11:13:13.822  INFO [main] c.l.d.DatebaseApplication:675 - No active profile set, falling back to default profiles: default
+2019-02-28 11:13:14.221  INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-28 11:13:14.266  INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 41ms. Found 1 repository interfaces.
+2019-02-28 11:13:14.482  INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$98a3377c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-28 11:13:14.683  INFO [main] o.s.b.w.e.t.TomcatWebServer:90 - Tomcat initialized with port(s): 8080 (http)
+2019-02-28 11:13:14.693  INFO [main] o.a.c.h.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2019-02-28 11:13:14.698  INFO [main] o.a.c.c.StandardService:173 - Starting service [Tomcat]
+2019-02-28 11:13:14.699  INFO [main] o.a.c.c.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-02-28 11:13:14.703  INFO [main] o.a.c.c.AprLifecycleListener:173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\jdk\jdk\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\app\lenovo\product\11.2.0\client_2;E:\app\lenovo\product\11.2.0\client_2\bin;E:\app\lenovo\product\11.2.0\client_1;E:\app\lenovo\product\11.2.0\client_1\bin;E:\app\lenovo\product\11.2.0\dbhome_1\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;E:\idea\Maven\apache-maven-3.5.4-bin\apache-maven-3.5.4\bin;E:\jdk\jdk\bin;E:\jdk\jdk\jre\bin;E:\rabbitmq\erlang\erl10.2\bin;E:\idea\consul;E:\idea\Jmeter\apache-jmeter-5.0\bin;C:\Users\lenovo\AppData\Local\Microsoft\WindowsApps;;.]
+2019-02-28 11:13:14.917  INFO [main] o.a.j.s.TldScanner:173 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-02-28 11:13:14.920  INFO [main] o.a.c.c.C.[.[.[/]:173 - Initializing Spring embedded WebApplicationContext
+2019-02-28 11:13:14.922  INFO [main] o.s.w.c.ContextLoader:296 - Root WebApplicationContext: initialization completed in 1077 ms
+2019-02-28 11:13:15.064  INFO [main] c.a.d.p.DruidDataSource:106 - {dataSource-1} inited
+2019-02-28 11:13:15.195  INFO [main] o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-28 11:13:15.231  INFO [main] o.h.Version:46 - HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-28 11:13:15.232  INFO [main] o.h.c.Environment:213 - HHH000206: hibernate.properties not found
+2019-02-28 11:13:15.311  INFO [main] o.h.a.c.Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-28 11:13:15.386  INFO [main] o.h.d.Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-02-28 11:13:15.719  INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean:415 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-02-28 11:13:15.832  WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration:236 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-02-28 11:13:16.088  INFO [main] o.a.c.h.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8080"]
+2019-02-28 11:13:16.113  INFO [main] o.s.b.w.e.t.TomcatWebServer:204 - Tomcat started on port(s): 8080 (http) with context path ''
+2019-02-28 11:13:16.115  INFO [main] c.l.d.DatebaseApplication:59 - Started DatebaseApplication in 2.549 seconds (JVM running for 3.338)
+2019-02-28 11:13:20.715  INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-02-28 11:13:20.715  INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2019-02-28 11:13:20.720  INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet:546 - Completed initialization in 5 ms
+2019-02-28 11:13:20.766  INFO [http-nio-8080-exec-1] c.l.d.c.IndexController:47 - 123333------------------------------------
+2019-02-28 11:16:17.128  INFO [main] c.l.d.DatebaseApplication:50 - Starting DatebaseApplication on XXBlI1-liuzy with PID 24520 (E:\idea\Demo\datebase\target\classes started by lenovo in E:\idea\Demo\datebase)
+2019-02-28 11:16:17.130 DEBUG [main] c.l.d.DatebaseApplication:53 - Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2019-02-28 11:16:17.131  INFO [main] c.l.d.DatebaseApplication:675 - No active profile set, falling back to default profiles: default
+2019-02-28 11:16:17.597  INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-28 11:16:17.643  INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 40ms. Found 1 repository interfaces.
+2019-02-28 11:16:17.861  INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$edcea813] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-28 11:16:18.072  INFO [main] o.s.b.w.e.t.TomcatWebServer:90 - Tomcat initialized with port(s): 8080 (http)
+2019-02-28 11:16:18.082  INFO [main] o.a.c.h.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2019-02-28 11:16:18.087  INFO [main] o.a.c.c.StandardService:173 - Starting service [Tomcat]
+2019-02-28 11:16:18.087  INFO [main] o.a.c.c.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-02-28 11:16:18.092  INFO [main] o.a.c.c.AprLifecycleListener:173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\jdk\jdk\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\app\lenovo\product\11.2.0\client_2;E:\app\lenovo\product\11.2.0\client_2\bin;E:\app\lenovo\product\11.2.0\client_1;E:\app\lenovo\product\11.2.0\client_1\bin;E:\app\lenovo\product\11.2.0\dbhome_1\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;E:\idea\Maven\apache-maven-3.5.4-bin\apache-maven-3.5.4\bin;E:\jdk\jdk\bin;E:\jdk\jdk\jre\bin;E:\rabbitmq\erlang\erl10.2\bin;E:\idea\consul;E:\idea\Jmeter\apache-jmeter-5.0\bin;C:\Users\lenovo\AppData\Local\Microsoft\WindowsApps;;.]
+2019-02-28 11:16:18.305  INFO [main] o.a.j.s.TldScanner:173 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-02-28 11:16:18.309  INFO [main] o.a.c.c.C.[.[.[/]:173 - Initializing Spring embedded WebApplicationContext
+2019-02-28 11:16:18.309  INFO [main] o.s.w.c.ContextLoader:296 - Root WebApplicationContext: initialization completed in 1132 ms
+2019-02-28 11:16:18.456  INFO [main] c.a.d.p.DruidDataSource:106 - {dataSource-1} inited
+2019-02-28 11:16:18.587  INFO [main] o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-28 11:16:18.624  INFO [main] o.h.Version:46 - HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-28 11:16:18.625  INFO [main] o.h.c.Environment:213 - HHH000206: hibernate.properties not found
+2019-02-28 11:16:18.700  INFO [main] o.h.a.c.Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-28 11:16:18.775  INFO [main] o.h.d.Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-02-28 11:16:19.108  INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean:415 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-02-28 11:16:19.225  WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration:236 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-02-28 11:16:19.476  INFO [main] o.a.c.h.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8080"]
+2019-02-28 11:16:19.499  INFO [main] o.s.b.w.e.t.TomcatWebServer:204 - Tomcat started on port(s): 8080 (http) with context path ''
+2019-02-28 11:16:19.500  INFO [main] c.l.d.DatebaseApplication:59 - Started DatebaseApplication in 2.653 seconds (JVM running for 3.487)
+2019-02-28 11:16:22.045  INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-02-28 11:16:22.045  INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2019-02-28 11:16:22.049  INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet:546 - Completed initialization in 4 ms
+2019-02-28 11:16:22.095  INFO [http-nio-8080-exec-1] c.l.d.c.IndexController:47 - 123333------------------------------------
+2019-02-28 11:16:36.606  INFO [main] c.l.d.DatebaseApplication:50 - Starting DatebaseApplication on XXBlI1-liuzy with PID 31076 (E:\idea\Demo\datebase\target\classes started by lenovo in E:\idea\Demo\datebase)
+2019-02-28 11:16:36.608 DEBUG [main] c.l.d.DatebaseApplication:53 - Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2019-02-28 11:16:36.609  INFO [main] c.l.d.DatebaseApplication:675 - No active profile set, falling back to default profiles: default
+2019-02-28 11:16:36.990  INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-28 11:16:37.031  INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 37ms. Found 1 repository interfaces.
+2019-02-28 11:16:37.216  INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$964d8a85] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-28 11:16:37.416  INFO [main] o.s.b.w.e.t.TomcatWebServer:90 - Tomcat initialized with port(s): 8080 (http)
+2019-02-28 11:16:37.426  INFO [main] o.a.c.h.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2019-02-28 11:16:37.434  INFO [main] o.a.c.c.StandardService:173 - Starting service [Tomcat]
+2019-02-28 11:16:37.434  INFO [main] o.a.c.c.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-02-28 11:16:37.438  INFO [main] o.a.c.c.AprLifecycleListener:173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\jdk\jdk\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\app\lenovo\product\11.2.0\client_2;E:\app\lenovo\product\11.2.0\client_2\bin;E:\app\lenovo\product\11.2.0\client_1;E:\app\lenovo\product\11.2.0\client_1\bin;E:\app\lenovo\product\11.2.0\dbhome_1\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;E:\idea\Maven\apache-maven-3.5.4-bin\apache-maven-3.5.4\bin;E:\jdk\jdk\bin;E:\jdk\jdk\jre\bin;E:\rabbitmq\erlang\erl10.2\bin;E:\idea\consul;E:\idea\Jmeter\apache-jmeter-5.0\bin;C:\Users\lenovo\AppData\Local\Microsoft\WindowsApps;;.]
+2019-02-28 11:16:37.669  INFO [main] o.a.j.s.TldScanner:173 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-02-28 11:16:37.672  INFO [main] o.a.c.c.C.[.[.[/]:173 - Initializing Spring embedded WebApplicationContext
+2019-02-28 11:16:37.673  INFO [main] o.s.w.c.ContextLoader:296 - Root WebApplicationContext: initialization completed in 1041 ms
+2019-02-28 11:16:37.812  INFO [main] c.a.d.p.DruidDataSource:106 - {dataSource-1} inited
+2019-02-28 11:16:37.945  INFO [main] o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-28 11:16:37.990  INFO [main] o.h.Version:46 - HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-28 11:16:37.991  INFO [main] o.h.c.Environment:213 - HHH000206: hibernate.properties not found
+2019-02-28 11:16:38.112  INFO [main] o.h.a.c.Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-28 11:16:38.215  INFO [main] o.h.d.Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-02-28 11:16:38.613  INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean:415 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-02-28 11:16:38.738  WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration:236 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-02-28 11:16:39.006  INFO [main] o.a.c.h.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8080"]
+2019-02-28 11:16:39.047  INFO [main] o.s.b.w.e.t.TomcatWebServer:204 - Tomcat started on port(s): 8080 (http) with context path ''
+2019-02-28 11:16:39.049  INFO [main] c.l.d.DatebaseApplication:59 - Started DatebaseApplication in 2.724 seconds (JVM running for 3.556)
+2019-02-28 11:16:48.672  INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-02-28 11:16:48.672  INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2019-02-28 11:16:48.677  INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet:546 - Completed initialization in 4 ms
+2019-02-28 11:16:48.724  INFO [http-nio-8080-exec-1] c.l.d.c.IndexController:47 - 123333------------------------------------
+2019-02-28 11:20:59.185  INFO [main] c.l.d.DatebaseApplication:50 - Starting DatebaseApplication on XXBlI1-liuzy with PID 32572 (E:\idea\Demo\datebase\target\classes started by lenovo in E:\idea\Demo\datebase)
+2019-02-28 11:20:59.188 DEBUG [main] c.l.d.DatebaseApplication:53 - Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2019-02-28 11:20:59.189  INFO [main] c.l.d.DatebaseApplication:675 - No active profile set, falling back to default profiles: default
+2019-02-28 11:20:59.641  INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-28 11:20:59.686  INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 41ms. Found 1 repository interfaces.
+2019-02-28 11:20:59.875  INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2eaf020c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-28 11:21:00.119  INFO [main] o.s.b.w.e.t.TomcatWebServer:90 - Tomcat initialized with port(s): 8080 (http)
+2019-02-28 11:21:00.128  INFO [main] o.a.c.h.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2019-02-28 11:21:00.136  INFO [main] o.a.c.c.StandardService:173 - Starting service [Tomcat]
+2019-02-28 11:21:00.136  INFO [main] o.a.c.c.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-02-28 11:21:00.141  INFO [main] o.a.c.c.AprLifecycleListener:173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\jdk\jdk\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\app\lenovo\product\11.2.0\client_2;E:\app\lenovo\product\11.2.0\client_2\bin;E:\app\lenovo\product\11.2.0\client_1;E:\app\lenovo\product\11.2.0\client_1\bin;E:\app\lenovo\product\11.2.0\dbhome_1\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;E:\idea\Maven\apache-maven-3.5.4-bin\apache-maven-3.5.4\bin;E:\jdk\jdk\bin;E:\jdk\jdk\jre\bin;E:\rabbitmq\erlang\erl10.2\bin;E:\idea\consul;E:\idea\Jmeter\apache-jmeter-5.0\bin;C:\Users\lenovo\AppData\Local\Microsoft\WindowsApps;;.]
+2019-02-28 11:21:00.346  INFO [main] o.a.j.s.TldScanner:173 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-02-28 11:21:00.350  INFO [main] o.a.c.c.C.[.[.[/]:173 - Initializing Spring embedded WebApplicationContext
+2019-02-28 11:21:00.351  INFO [main] o.s.w.c.ContextLoader:296 - Root WebApplicationContext: initialization completed in 1128 ms
+2019-02-28 11:21:00.490  INFO [main] c.a.d.p.DruidDataSource:106 - {dataSource-1} inited
+2019-02-28 11:21:00.612  INFO [main] o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-28 11:21:00.649  INFO [main] o.h.Version:46 - HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-28 11:21:00.650  INFO [main] o.h.c.Environment:213 - HHH000206: hibernate.properties not found
+2019-02-28 11:21:00.729  INFO [main] o.h.a.c.Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-28 11:21:00.806  INFO [main] o.h.d.Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-02-28 11:21:01.131  INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean:415 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-02-28 11:21:01.241  WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration:236 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-02-28 11:21:01.476  INFO [main] o.a.c.h.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8080"]
+2019-02-28 11:21:01.503  INFO [main] o.s.b.w.e.t.TomcatWebServer:204 - Tomcat started on port(s): 8080 (http) with context path ''
+2019-02-28 11:21:01.505  INFO [main] c.l.d.DatebaseApplication:59 - Started DatebaseApplication in 2.612 seconds (JVM running for 3.425)
+2019-02-28 11:21:18.645  INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-02-28 11:21:18.646  INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2019-02-28 11:21:18.651  INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet:546 - Completed initialization in 5 ms
+2019-02-28 11:21:18.704  INFO [http-nio-8080-exec-1] c.l.d.c.IndexController:47 - 123333------------------------------------
+2019-02-28 11:42:48.614  INFO [main] c.l.d.DatebaseApplication:50 - Starting DatebaseApplication on XXBlI1-liuzy with PID 19288 (E:\idea\Demo\datebase\target\classes started by lenovo in E:\idea\Demo\datebase)
+2019-02-28 11:42:48.616 DEBUG [main] c.l.d.DatebaseApplication:53 - Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2019-02-28 11:42:48.616  INFO [main] c.l.d.DatebaseApplication:675 - No active profile set, falling back to default profiles: default
+2019-02-28 11:42:49.172  INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-28 11:42:49.238  INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 56ms. Found 1 repository interfaces.
+2019-02-28 11:42:49.484  INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f461acf5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-28 11:42:49.710  INFO [main] o.s.b.w.e.t.TomcatWebServer:90 - Tomcat initialized with port(s): 8080 (http)
+2019-02-28 11:42:49.719  INFO [main] o.a.c.h.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2019-02-28 11:42:49.725  INFO [main] o.a.c.c.StandardService:173 - Starting service [Tomcat]
+2019-02-28 11:42:49.726  INFO [main] o.a.c.c.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-02-28 11:42:49.730  INFO [main] o.a.c.c.AprLifecycleListener:173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\jdk\jdk\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\app\lenovo\product\11.2.0\client_2;E:\app\lenovo\product\11.2.0\client_2\bin;E:\app\lenovo\product\11.2.0\client_1;E:\app\lenovo\product\11.2.0\client_1\bin;E:\app\lenovo\product\11.2.0\dbhome_1\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;E:\idea\Maven\apache-maven-3.5.4-bin\apache-maven-3.5.4\bin;E:\jdk\jdk\bin;E:\jdk\jdk\jre\bin;E:\rabbitmq\erlang\erl10.2\bin;E:\idea\consul;E:\idea\Jmeter\apache-jmeter-5.0\bin;C:\Users\lenovo\AppData\Local\Microsoft\WindowsApps;;.]
+2019-02-28 11:42:49.929  INFO [main] o.a.j.s.TldScanner:173 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-02-28 11:42:49.932  INFO [main] o.a.c.c.C.[.[.[/]:173 - Initializing Spring embedded WebApplicationContext
+2019-02-28 11:42:49.933  INFO [main] o.s.w.c.ContextLoader:296 - Root WebApplicationContext: initialization completed in 1291 ms
+2019-02-28 11:42:50.088  INFO [main] c.a.d.p.DruidDataSource:106 - {dataSource-1} inited
+2019-02-28 11:42:50.224  INFO [main] o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-28 11:42:50.260  INFO [main] o.h.Version:46 - HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-28 11:42:50.261  INFO [main] o.h.c.Environment:213 - HHH000206: hibernate.properties not found
+2019-02-28 11:42:50.336  INFO [main] o.h.a.c.Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-28 11:42:50.413  INFO [main] o.h.d.Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-02-28 11:42:50.743  INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean:415 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-02-28 11:42:50.852  WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration:236 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-02-28 11:42:51.098  INFO [main] o.a.c.h.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8080"]
+2019-02-28 11:42:51.122  INFO [main] o.s.b.w.e.t.TomcatWebServer:204 - Tomcat started on port(s): 8080 (http) with context path ''
+2019-02-28 11:42:51.123  INFO [main] c.l.d.DatebaseApplication:59 - Started DatebaseApplication in 2.748 seconds (JVM running for 3.585)
+2019-02-28 11:50:21.816  INFO [main] c.l.d.DatebaseApplication:50 - Starting DatebaseApplication on XXBlI1-liuzy with PID 31324 (E:\idea\Demo\datebase\target\classes started by lenovo in E:\idea\Demo\datebase)
+2019-02-28 11:50:21.818 DEBUG [main] c.l.d.DatebaseApplication:53 - Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2019-02-28 11:50:21.819  INFO [main] c.l.d.DatebaseApplication:675 - No active profile set, falling back to default profiles: default
+2019-02-28 11:50:22.268  INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-28 11:50:22.329  INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 55ms. Found 1 repository interfaces.
+2019-02-28 11:50:22.587  INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a4d91d20] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-28 11:50:22.790  INFO [main] o.s.b.w.e.t.TomcatWebServer:90 - Tomcat initialized with port(s): 8080 (http)
+2019-02-28 11:50:22.801  INFO [main] o.a.c.h.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2019-02-28 11:50:22.808  INFO [main] o.a.c.c.StandardService:173 - Starting service [Tomcat]
+2019-02-28 11:50:22.808  INFO [main] o.a.c.c.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-02-28 11:50:22.814  INFO [main] o.a.c.c.AprLifecycleListener:173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\jdk\jdk\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\app\lenovo\product\11.2.0\client_2;E:\app\lenovo\product\11.2.0\client_2\bin;E:\app\lenovo\product\11.2.0\client_1;E:\app\lenovo\product\11.2.0\client_1\bin;E:\app\lenovo\product\11.2.0\dbhome_1\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;E:\idea\Maven\apache-maven-3.5.4-bin\apache-maven-3.5.4\bin;E:\jdk\jdk\bin;E:\jdk\jdk\jre\bin;E:\rabbitmq\erlang\erl10.2\bin;E:\idea\consul;E:\idea\Jmeter\apache-jmeter-5.0\bin;C:\Users\lenovo\AppData\Local\Microsoft\WindowsApps;;.]
+2019-02-28 11:50:23.047  INFO [main] o.a.j.s.TldScanner:173 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-02-28 11:50:23.050  INFO [main] o.a.c.c.C.[.[.[/]:173 - Initializing Spring embedded WebApplicationContext
+2019-02-28 11:50:23.051  INFO [main] o.s.w.c.ContextLoader:296 - Root WebApplicationContext: initialization completed in 1208 ms
+2019-02-28 11:50:23.249  INFO [main] c.a.d.p.DruidDataSource:106 - {dataSource-1} inited
+2019-02-28 11:50:23.288  INFO [main] o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-28 11:50:23.328  INFO [main] o.h.Version:46 - HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-28 11:50:23.328  INFO [main] o.h.c.Environment:213 - HHH000206: hibernate.properties not found
+2019-02-28 11:50:23.409  INFO [main] o.h.a.c.Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-28 11:50:23.501  INFO [main] o.h.d.Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-02-28 11:50:23.848  INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean:415 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-02-28 11:50:23.963  WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration:236 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-02-28 11:50:24.224  INFO [main] o.a.c.h.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8080"]
+2019-02-28 11:50:24.277  INFO [main] o.s.b.w.e.t.TomcatWebServer:204 - Tomcat started on port(s): 8080 (http) with context path ''
+2019-02-28 11:50:24.279  INFO [main] c.l.d.DatebaseApplication:59 - Started DatebaseApplication in 2.782 seconds (JVM running for 3.801)
+2019-02-28 11:50:41.065  INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-02-28 11:50:41.066  INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2019-02-28 11:50:41.072  INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet:546 - Completed initialization in 6 ms
+2019-02-28 11:50:41.129  INFO [http-nio-8080-exec-1] c.l.d.c.IndexController:47 - 123333------------------------------------
+2019-02-28 11:52:09.216  INFO [main] c.l.d.DatebaseApplication:50 - Starting DatebaseApplication on XXBlI1-liuzy with PID 30804 (E:\idea\Demo\datebase\target\classes started by lenovo in E:\idea\Demo\datebase)
+2019-02-28 11:52:09.218 DEBUG [main] c.l.d.DatebaseApplication:53 - Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2019-02-28 11:52:09.219  INFO [main] c.l.d.DatebaseApplication:675 - No active profile set, falling back to default profiles: default
+2019-02-28 11:52:09.642  INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-28 11:52:09.705  INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 57ms. Found 1 repository interfaces.
+2019-02-28 11:52:09.912  INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e37804cb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-28 11:52:10.109  INFO [main] o.s.b.w.e.t.TomcatWebServer:90 - Tomcat initialized with port(s): 8080 (http)
+2019-02-28 11:52:10.119  INFO [main] o.a.c.h.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2019-02-28 11:52:10.125  INFO [main] o.a.c.c.StandardService:173 - Starting service [Tomcat]
+2019-02-28 11:52:10.126  INFO [main] o.a.c.c.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-02-28 11:52:10.130  INFO [main] o.a.c.c.AprLifecycleListener:173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\jdk\jdk\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\app\lenovo\product\11.2.0\client_2;E:\app\lenovo\product\11.2.0\client_2\bin;E:\app\lenovo\product\11.2.0\client_1;E:\app\lenovo\product\11.2.0\client_1\bin;E:\app\lenovo\product\11.2.0\dbhome_1\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;E:\idea\Maven\apache-maven-3.5.4-bin\apache-maven-3.5.4\bin;E:\jdk\jdk\bin;E:\jdk\jdk\jre\bin;E:\rabbitmq\erlang\erl10.2\bin;E:\idea\consul;E:\idea\Jmeter\apache-jmeter-5.0\bin;C:\Users\lenovo\AppData\Local\Microsoft\WindowsApps;;.]
+2019-02-28 11:52:10.347  INFO [main] o.a.j.s.TldScanner:173 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-02-28 11:52:10.350  INFO [main] o.a.c.c.C.[.[.[/]:173 - Initializing Spring embedded WebApplicationContext
+2019-02-28 11:52:10.351  INFO [main] o.s.w.c.ContextLoader:296 - Root WebApplicationContext: initialization completed in 1103 ms
+2019-02-28 11:52:10.525  INFO [main] c.a.d.p.DruidDataSource:106 - {dataSource-1} inited
+2019-02-28 11:52:10.556  INFO [main] o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-28 11:52:10.593  INFO [main] o.h.Version:46 - HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-28 11:52:10.594  INFO [main] o.h.c.Environment:213 - HHH000206: hibernate.properties not found
+2019-02-28 11:52:10.671  INFO [main] o.h.a.c.Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-28 11:52:10.751  INFO [main] o.h.d.Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-02-28 11:52:11.100  INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean:415 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-02-28 11:52:11.252  WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration:236 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-02-28 11:52:11.540  INFO [main] o.a.c.h.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8080"]
+2019-02-28 11:52:11.569  INFO [main] o.s.b.w.e.t.TomcatWebServer:204 - Tomcat started on port(s): 8080 (http) with context path ''
+2019-02-28 11:52:11.572  INFO [main] c.l.d.DatebaseApplication:59 - Started DatebaseApplication in 2.649 seconds (JVM running for 3.623)
+2019-02-28 11:52:21.593  INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-02-28 11:52:21.593  INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2019-02-28 11:52:21.597  INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet:546 - Completed initialization in 4 ms
+2019-02-28 11:52:21.648  INFO [http-nio-8080-exec-1] c.l.d.c.IndexController:47 - 123333------------------------------------
+2019-02-28 11:54:26.482  INFO [http-nio-8080-exec-6] c.l.d.c.IndexController:47 - 123333------------------------------------
+2019-02-28 12:00:39.607  INFO [main] c.l.d.DatebaseApplication:50 - Starting DatebaseApplication on XXBlI1-liuzy with PID 21660 (E:\idea\Demo\datebase\target\classes started by lenovo in E:\idea\Demo\datebase)
+2019-02-28 12:00:39.609 DEBUG [main] c.l.d.DatebaseApplication:53 - Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2019-02-28 12:00:39.610  INFO [main] c.l.d.DatebaseApplication:675 - No active profile set, falling back to default profiles: default
+2019-02-28 12:00:40.079  INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-28 12:00:40.167  INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 79ms. Found 1 repository interfaces.
+2019-02-28 12:00:40.430  INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$afd3678e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-28 12:00:40.641  INFO [main] o.s.b.w.e.t.TomcatWebServer:90 - Tomcat initialized with port(s): 8080 (http)
+2019-02-28 12:00:40.651  INFO [main] o.a.c.h.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2019-02-28 12:00:40.657  INFO [main] o.a.c.c.StandardService:173 - Starting service [Tomcat]
+2019-02-28 12:00:40.657  INFO [main] o.a.c.c.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-02-28 12:00:40.662  INFO [main] o.a.c.c.AprLifecycleListener:173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\jdk\jdk\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\app\lenovo\product\11.2.0\client_2;E:\app\lenovo\product\11.2.0\client_2\bin;E:\app\lenovo\product\11.2.0\client_1;E:\app\lenovo\product\11.2.0\client_1\bin;E:\app\lenovo\product\11.2.0\dbhome_1\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;E:\idea\Maven\apache-maven-3.5.4-bin\apache-maven-3.5.4\bin;E:\jdk\jdk\bin;E:\jdk\jdk\jre\bin;E:\rabbitmq\erlang\erl10.2\bin;E:\idea\consul;E:\idea\Jmeter\apache-jmeter-5.0\bin;C:\Users\lenovo\AppData\Local\Microsoft\WindowsApps;;.]
+2019-02-28 12:00:40.858  INFO [main] o.a.j.s.TldScanner:173 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-02-28 12:00:40.861  INFO [main] o.a.c.c.C.[.[.[/]:173 - Initializing Spring embedded WebApplicationContext
+2019-02-28 12:00:40.862  INFO [main] o.s.w.c.ContextLoader:296 - Root WebApplicationContext: initialization completed in 1196 ms
+2019-02-28 12:00:41.058  INFO [main] c.a.d.p.DruidDataSource:106 - {dataSource-1} inited
+2019-02-28 12:00:41.089  INFO [main] o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-28 12:00:41.126  INFO [main] o.h.Version:46 - HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-28 12:00:41.127  INFO [main] o.h.c.Environment:213 - HHH000206: hibernate.properties not found
+2019-02-28 12:00:41.207  INFO [main] o.h.a.c.Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-28 12:00:41.283  INFO [main] o.h.d.Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-02-28 12:00:41.605  INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean:415 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-02-28 12:00:41.721  WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration:236 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-02-28 12:00:41.953  INFO [main] o.a.c.h.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8080"]
+2019-02-28 12:00:41.976  INFO [main] o.s.b.w.e.t.TomcatWebServer:204 - Tomcat started on port(s): 8080 (http) with context path ''
+2019-02-28 12:00:41.977  INFO [main] c.l.d.DatebaseApplication:59 - Started DatebaseApplication in 2.624 seconds (JVM running for 3.557)
+2019-02-28 12:00:47.838  INFO [main] c.l.d.DatebaseApplication:50 - Starting DatebaseApplication on XXBlI1-liuzy with PID 10180 (E:\idea\Demo\datebase\target\classes started by lenovo in E:\idea\Demo\datebase)
+2019-02-28 12:00:47.839 DEBUG [main] c.l.d.DatebaseApplication:53 - Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2019-02-28 12:00:47.840  INFO [main] c.l.d.DatebaseApplication:675 - No active profile set, falling back to default profiles: default
+2019-02-28 12:00:48.222  INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-28 12:00:48.265  INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 38ms. Found 1 repository interfaces.
+2019-02-28 12:00:48.452  INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8a2aca81] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-28 12:00:48.658  INFO [main] o.s.b.w.e.t.TomcatWebServer:90 - Tomcat initialized with port(s): 8080 (http)
+2019-02-28 12:00:48.668  INFO [main] o.a.c.h.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2019-02-28 12:00:48.674  INFO [main] o.a.c.c.StandardService:173 - Starting service [Tomcat]
+2019-02-28 12:00:48.675  INFO [main] o.a.c.c.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-02-28 12:00:48.681  INFO [main] o.a.c.c.AprLifecycleListener:173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\jdk\jdk\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\app\lenovo\product\11.2.0\client_2;E:\app\lenovo\product\11.2.0\client_2\bin;E:\app\lenovo\product\11.2.0\client_1;E:\app\lenovo\product\11.2.0\client_1\bin;E:\app\lenovo\product\11.2.0\dbhome_1\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;E:\idea\Maven\apache-maven-3.5.4-bin\apache-maven-3.5.4\bin;E:\jdk\jdk\bin;E:\jdk\jdk\jre\bin;E:\rabbitmq\erlang\erl10.2\bin;E:\idea\consul;E:\idea\Jmeter\apache-jmeter-5.0\bin;C:\Users\lenovo\AppData\Local\Microsoft\WindowsApps;;.]
+2019-02-28 12:00:48.890  INFO [main] o.a.j.s.TldScanner:173 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-02-28 12:00:48.893  INFO [main] o.a.c.c.C.[.[.[/]:173 - Initializing Spring embedded WebApplicationContext
+2019-02-28 12:00:48.894  INFO [main] o.s.w.c.ContextLoader:296 - Root WebApplicationContext: initialization completed in 1031 ms
+2019-02-28 12:00:49.064  INFO [main] c.a.d.p.DruidDataSource:106 - {dataSource-1} inited
+2019-02-28 12:00:49.103  INFO [main] o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-28 12:00:49.147  INFO [main] o.h.Version:46 - HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-28 12:00:49.149  INFO [main] o.h.c.Environment:213 - HHH000206: hibernate.properties not found
+2019-02-28 12:00:49.244  INFO [main] o.h.a.c.Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-28 12:00:49.328  INFO [main] o.h.d.Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-02-28 12:00:49.661  INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean:415 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-02-28 12:00:49.786  WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration:236 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-02-28 12:00:50.035  INFO [main] o.a.c.h.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8080"]
+2019-02-28 12:00:50.058  INFO [main] o.s.b.w.e.t.TomcatWebServer:204 - Tomcat started on port(s): 8080 (http) with context path ''
+2019-02-28 12:00:50.059  INFO [main] c.l.d.DatebaseApplication:59 - Started DatebaseApplication in 2.5 seconds (JVM running for 3.525)
+2019-02-28 12:02:17.091  INFO [main] c.l.d.DatebaseApplication:50 - Starting DatebaseApplication on XXBlI1-liuzy with PID 1512 (E:\idea\Demo\datebase\target\classes started by lenovo in E:\idea\Demo\datebase)
+2019-02-28 12:02:17.092 DEBUG [main] c.l.d.DatebaseApplication:53 - Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2019-02-28 12:02:17.093  INFO [main] c.l.d.DatebaseApplication:675 - No active profile set, falling back to default profiles: default
+2019-02-28 12:02:17.470  INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-02-28 12:02:17.514  INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 38ms. Found 1 repository interfaces.
+2019-02-28 12:02:17.691  INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1b6933ca] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-28 12:02:17.886  INFO [main] o.s.b.w.e.t.TomcatWebServer:90 - Tomcat initialized with port(s): 8080 (http)
+2019-02-28 12:02:17.899  INFO [main] o.a.c.h.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2019-02-28 12:02:17.912  INFO [main] o.a.c.c.StandardService:173 - Starting service [Tomcat]
+2019-02-28 12:02:17.912  INFO [main] o.a.c.c.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-02-28 12:02:17.919  INFO [main] o.a.c.c.AprLifecycleListener:173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\jdk\jdk\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\app\lenovo\product\11.2.0\client_2;E:\app\lenovo\product\11.2.0\client_2\bin;E:\app\lenovo\product\11.2.0\client_1;E:\app\lenovo\product\11.2.0\client_1\bin;E:\app\lenovo\product\11.2.0\dbhome_1\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;E:\idea\Maven\apache-maven-3.5.4-bin\apache-maven-3.5.4\bin;E:\jdk\jdk\bin;E:\jdk\jdk\jre\bin;E:\rabbitmq\erlang\erl10.2\bin;E:\idea\consul;E:\idea\Jmeter\apache-jmeter-5.0\bin;C:\Users\lenovo\AppData\Local\Microsoft\WindowsApps;;.]
+2019-02-28 12:02:18.138  INFO [main] o.a.j.s.TldScanner:173 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-02-28 12:02:18.141  INFO [main] o.a.c.c.C.[.[.[/]:173 - Initializing Spring embedded WebApplicationContext
+2019-02-28 12:02:18.141  INFO [main] o.s.w.c.ContextLoader:296 - Root WebApplicationContext: initialization completed in 1023 ms
+2019-02-28 12:02:18.313  INFO [main] c.a.d.p.DruidDataSource:106 - {dataSource-1} inited
+2019-02-28 12:02:18.344  INFO [main] o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-02-28 12:02:18.383  INFO [main] o.h.Version:46 - HHH000412: Hibernate Core {5.3.7.Final}
+2019-02-28 12:02:18.384  INFO [main] o.h.c.Environment:213 - HHH000206: hibernate.properties not found
+2019-02-28 12:02:18.463  INFO [main] o.h.a.c.Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-02-28 12:02:18.541  INFO [main] o.h.d.Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-02-28 12:02:18.884  INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean:415 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-02-28 12:02:19.004  WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration:236 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-02-28 12:02:19.301  INFO [main] o.a.c.h.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8080"]
+2019-02-28 12:02:19.333  INFO [main] o.s.b.w.e.t.TomcatWebServer:204 - Tomcat started on port(s): 8080 (http) with context path ''
+2019-02-28 12:02:19.335  INFO [main] c.l.d.DatebaseApplication:59 - Started DatebaseApplication in 2.53 seconds (JVM running for 3.486)
