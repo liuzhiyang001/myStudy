@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" language="javascript" src="/static/LodopFuncs.js"></script>
+    <object id="LODOP" classid="clsid:2105C259-1E0C-4534-8141-A753534CB4CA" width="0" height="0"></object>
+
+    <script language="JavaScript" type="text/javascript">
+        var LODOP;
+        function prn1_preview() {
+            CreatePage();
+            LODOP.PREVIEW();
+        }
+        function print_print() {
+            CreatePage();
+            LODOP.PRINT();
+        }
+
+        //设计
+        function prn_design() {
+            CreatePage();
+            if(LODOP.CVERSION) {
+                CLODOP.On_Return=function(TaskId,Value){
+                    var  code = Value;
+                    alert(code);
+                };
+            }
+            LODOP.PRINT_DESIGN();
+        }
+
+        //维护
+        function prn_setup() {
+            CreatePage();
+            LODOP.PRINT_SETUP();
+        }
+
+
+        function CreatePage() {
+            var LODOP = getLodop();
+
+        };
+
+    </script>
+</head>
+<a href="javascript:;" onclick="prn1_preview();">预览</a>&nbsp
+<a href="javascript:;" onclick="print_print();">打印</a>&nbsp
+<a href="javascript:;" onclick="prn_design();">设计</a>
+<a href="javascript:;" onclick="prn_setup();">维护</a>
+
+</body>
+</html>

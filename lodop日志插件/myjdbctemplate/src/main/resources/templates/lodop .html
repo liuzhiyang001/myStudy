@@ -1,0 +1,246 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>WEB打印控件LODOP的样例一:在页面内引入打印控件</title>
+<script language="javascript" type="text/javascript" src="../static/LodopFuncs.js"></script>
+<object id="LODOP" classid="clsid:2105C259-1E0C-4534-8141-A753534CB4CA" width=0 height=0></object>
+<script language="javascript" type="text/javascript">
+function CreatePrintPage() {
+var whichOne='jx';
+var num=2;
+    var fenyeSize=0;
+
+    var printNum;//序号
+    LODOP.PRINT_INITA(0,0,1800,1460,"套打EMS的模板");
+    if(whichOne=="bz"||whichOne=="hn"){
+         LODOP.SET_PRINT_PAGESIZE(0,0,0,"A4");
+         fenyeSize=1070;
+    }else if(whichOne=="jx"){
+         LODOP.SET_PRINT_PAGESIZE(0,'210mm','140mm',"A4");//一开始用的是像素，后来都改成用mm为单位
+         fenyeSize=140;
+    }if(whichOne=="zj"){
+          LODOP.PRINT_INITA(100,11,800,1460,"套打EMS的模板");
+         fenyeSize=470;
+        LODOP.SET_PRINT_PAGESIZE(0,1900,1300,"A4");
+        LODOP.SET_PRINT_MODE("PRINT_PAGE_PERCENT", "Width:80%;Height:80%");
+    }
+
+        for(var i=0;i&lt;1;i++){
+
+
+            var lastheght=2;
+            //上面的信息
+            if(num!=1){//标准单据有标题，  num==1浙江单据没有
+            LODOP.ADD_PRINT_TEXT("3.39mm","64.4mm","77.55mm","9.6mm","XXXXX平台销售出库单");
+                LODOP.SET_PRINT_STYLEA(0, "ItemType", 0);
+                LODOP.SET_PRINT_STYLEA(0, "FontSize", 14);
+                LODOP.SET_PRINT_STYLEA(0, "Bold", 1);
+            }
+
+            var size =19;
+
+            var extendSize=0;
+            var table_hegth=(size+1)*25;
+            var fonsize=4;
+            //上面的信息
+            var lsous="11121额鹅鹅鹅"
+            var shohuor="111"
+            if(whichOne=="hn"||whichOne=="jx"){
+
+                LODOP.ADD_PRINT_TEXT("15.29mm","12.54mm","20.13mm","5.37mm","订单编号：");
+                LODOP.ADD_PRINT_TEXT("15.29mm","28.18mm","45.56mm","5.37mm","1111111111111111");
+                LODOP.ADD_PRINT_TEXT("15.29mm","73.37mm","20.13mm","5.37mm","下单日期：");
+                LODOP.ADD_PRINT_TEXT("15.29mm","88.66mm","20.13mm","5.37mm","2017-0909");
+                LODOP.ADD_PRINT_TEXT("15.29mm","109.03mm","20.13mm","5.37mm","发货日期：");
+                LODOP.ADD_PRINT_TEXT("15.29mm","124.65mm","20.13mm","5.37mm","2017-0909");
+                LODOP.ADD_PRINT_TEXT("6.03mm","154.28mm","27.54mm","14.1mm","1234");
+                LODOP.SET_PRINT_STYLEA(0, "ItemType", 0);
+                LODOP.SET_PRINT_STYLEA(0, "FontSize", 32);
+                LODOP.SET_PRINT_STYLEA(0, "Bold", 1);
+                LODOP.ADD_PRINT_TEXT("21.11mm","12.54mm","20.13mm","5.37mm","零售商：");
+                LODOP.ADD_PRINT_TEXT("21.11mm","24.98mm",3+getByteLen(lsous)*1.7+"mm","5.37mm",lsous);
+                LODOP.ADD_PRINT_TEXT("21.11mm",24.98+3+getByteLen(lsous)*1.7+"mm","20.13mm","5.37mm","收货人：");
+                LODOP.ADD_PRINT_TEXT("21.11mm",38+3+getByteLen(lsous)*1.7+"mm","20.13mm","5.37mm",shohuor);
+                LODOP.ADD_PRINT_TEXT("21.11mm",58+3+getByteLen(lsous)*1.7+"mm","20.13mm","5.37mm","联系电话：");
+                LODOP.ADD_PRINT_TEXT("21.11mm",73+3+getByteLen(lsous)*1.7+"mm","20.13mm","5.37mm","19765663427");
+                LODOP.ADD_PRINT_TEXT("26.41mm","12.81mm","20.13mm","5.37mm","收货地址：");
+                LODOP.ADD_PRINT_TEXT("26.41mm","28.68mm","139.99mm","5.37mm","北京天安门广场");
+            }
+
+            //标题等
+            LODOP.ADD_PRINT_TEXT("33.02mm","15.72mm","9.55mm","5.37mm","行号");
+             LODOP.SET_PRINT_STYLEA(0, "Alignment", 2);
+            LODOP.ADD_PRINT_TEXT("33.02mm","49.85mm","13.52mm","5.37mm","供货商");
+            LODOP.ADD_PRINT_TEXT("33.02mm","91.65mm","9.55mm","5.37mm","型号");
+            LODOP.ADD_PRINT_TEXT("33.02mm","120.5mm","9.55mm","5.37mm","颜色");
+            LODOP.ADD_PRINT_TEXT("33.02mm","144.57mm","20.13mm","5.37mm","单价（元）");
+            LODOP.ADD_PRINT_TEXT("33.02mm","162.56mm","9.55mm","5.37mm","数量");
+            LODOP.ADD_PRINT_TEXT("33.02mm","171.82mm","27.81mm","5.37mm","应付金额（元）");
+
+            //表格线
+            LODOP.ADD_PRINT_LINE("31.31mm","13mm","31.31mm","193.00mm",0,1);// 最上条标题横线
+            LODOP.ADD_PRINT_LINE("37.31mm","13mm","37.31mm","193.00mm",0,1);// 标题下横线
+            LODOP.ADD_PRINT_LINE("31.31mm","13mm", "37.11mm", "13mm", 0, 1);// 最左竖线
+            LODOP.ADD_PRINT_LINE("31.31mm","25mm", "37.11mm", "25mm", 0, 1);// 行号后竖线
+            LODOP.ADD_PRINT_LINE("31.31mm","83mm", "37.11mm", "83mm", 0, 1);// 供货商后竖线
+            LODOP.ADD_PRINT_LINE("31.31mm","110mm", "37.11mm", "110mm", 0, 1);// 型号后竖线
+            LODOP.ADD_PRINT_LINE("31.31mm","140mm", "37.11mm", "140mm", 0, 1);// 颜色后竖线
+            LODOP.ADD_PRINT_LINE("31.31mm","160mm", "37.11mm", "160mm", 0, 1);// 单价后竖线
+            LODOP.ADD_PRINT_LINE("31.31mm","170mm", "37.11mm", "170mm", 0, 1);// 数量后竖线
+            LODOP.ADD_PRINT_LINE("31.31mm","193mm", "37.11mm", "193mm", 0, 1);// 最右竖线
+
+            //动态列表信息
+            var trheight=37.31;//用于每个竖线距离上面的固定长度
+            var thHeight=37.98;//用于每行商品距离上面的固定长度
+            var newHeight=0;//用于动态增加一行的长度
+            var lastSize=0;//分页前的那个下标
+            var allProductNumber=0;
+            for(var k=0;k&lt;size;k++){
+            var aaa="12345678901234567";
+            var bbb="12345678901";
+            var ccc="1234567";
+                newHeight=(k-lastSize)*5.37+extendSize*fonsize;
+                var SizeTmpt=parseInt(getByteLen(aaa)/35);
+
+                if(parseInt(getByteLen(bbb)/16)>SizeTmpt){
+                     SizeTmpt=parseInt(getByteLen(bbb)/16);
+                }
+
+                if(parseInt(getByteLen(ccc)/17)>SizeTmpt){
+                    SizeTmpt=parseInt(getByteLen(ccc)/17);
+                }
+                LODOP.ADD_PRINT_TEXT(thHeight+newHeight+"mm","15.72mm","9.55mm","5.37mm",k+1);
+                LODOP.SET_PRINT_STYLEA(0, "Alignment", 2);
+                LODOP.ADD_PRINT_TEXT(thHeight+newHeight+"mm","25mm","58mm",5.3+SizeTmpt*fonsize+"mm",aaa);
+                LODOP.SET_PRINT_STYLEA(0, "Alignment", 2);
+                LODOP.ADD_PRINT_TEXT(thHeight+newHeight+"mm","83mm","27mm",5.3+SizeTmpt*fonsize+"mm",bbb);
+                LODOP.SET_PRINT_STYLEA(0, "Alignment", 2);
+                LODOP.ADD_PRINT_TEXT(thHeight+newHeight+"mm","110mm","30mm",5.3+SizeTmpt*fonsize+"mm",ccc);
+                LODOP.SET_PRINT_STYLEA(0, "Alignment", 2);
+                LODOP.ADD_PRINT_TEXT(thHeight+newHeight+"mm","140mm","20mm","5.37mm",'1234');
+                LODOP.SET_PRINT_STYLEA(0, "Alignment", 2);
+                LODOP.ADD_PRINT_TEXT(thHeight+newHeight+"mm","160mm","10mm","5.37mm",'2333');
+                LODOP.SET_PRINT_STYLEA(0, "Alignment", 2);
+                LODOP.ADD_PRINT_TEXT(thHeight+newHeight+"mm","170mm","23mm","5.37mm",'2323');
+                LODOP.SET_PRINT_STYLEA(0, "Alignment", 2);
+
+                extendSize+=SizeTmpt;
+                newHeight=(k-lastSize)*5.37+extendSize*fonsize;
+          if(k==lastSize+1&amp;&amp;k!=1){
+              LODOP.ADD_PRINT_LINE(trheight+newHeight-SizeTmpt*fonsize+"mm","13mm",trheight+newHeight-SizeTmpt*fonsize+"mm","193mm",0,1);//每条数据后加一横线
+          }
+                LODOP.ADD_PRINT_LINE(trheight+newHeight-SizeTmpt*fonsize+"mm","13mm",trheight+newHeight+5.37+"mm","13mm",0,1);//最左竖线
+                LODOP.ADD_PRINT_LINE(trheight+newHeight-SizeTmpt*fonsize+"mm","25mm",trheight+newHeight+5.37+"mm","25mm",0,1);//行号后竖线
+                LODOP.ADD_PRINT_LINE(trheight+newHeight-SizeTmpt*fonsize+"mm","83mm",trheight+newHeight+5.37+"mm","83mm",0,1);//供货商后竖线
+                LODOP.ADD_PRINT_LINE(trheight+newHeight-SizeTmpt*fonsize+"mm","110mm",trheight+newHeight+5.37+"mm",'110mm',0,1);//型号后竖线
+                LODOP.ADD_PRINT_LINE(trheight+newHeight-SizeTmpt*fonsize+"mm","140mm",trheight+newHeight+5.37+"mm","140mm",0,1);//颜色后竖线
+                LODOP.ADD_PRINT_LINE(trheight+newHeight-SizeTmpt*fonsize+"mm","160mm",trheight+newHeight+5.37+"mm","160mm",0,1);//单价后竖线
+                LODOP.ADD_PRINT_LINE(trheight+newHeight-SizeTmpt*fonsize+"mm","170mm",trheight+newHeight+5.37+"mm","170mm",0,1);//数量后竖线
+                LODOP.ADD_PRINT_LINE(trheight+newHeight-SizeTmpt*fonsize+"mm","193mm",trheight+newHeight+5.37+"mm","193mm",0,1);//最右竖线
+
+                LODOP.ADD_PRINT_LINE(trheight+newHeight+5.57+"mm","13mm",trheight+newHeight+5.57+"mm","193mm",0,1);//每条数据后加一横线
+
+                if((trheight+newHeight+5.57)%fenyeSize&lt;=fenyeSize&amp;&amp;(trheight+5.57+newHeight)%fenyeSize>=(fenyeSize-15)){
+
+                        LODOP.NewPage();
+                        thHeight=0.67;
+                       lastSize=k;
+                       trheight=0;
+                    extendSize=0;
+
+                }
+
+
+            }
+
+            table_hegth=trheight+newHeight+5.57;
+
+      if(whichOne=="hn"||whichOne=="jx"){
+          lastheght+=9.4;
+            LODOP.ADD_PRINT_TEXT(1+table_hegth+"mm","91.65mm","9.55mm","5.37mm","合计");
+            LODOP.SET_PRINT_STYLEA(0, "Alignment", 2);
+            LODOP.ADD_PRINT_TEXT(1+table_hegth+"mm","160mm","10mm","5.37mm",'3333');
+            LODOP.SET_PRINT_STYLEA(0, "Alignment", 2);
+            LODOP.ADD_PRINT_TEXT(1+table_hegth+"mm","170mm","23mm","5.37mm",'999999');
+            LODOP.SET_PRINT_STYLEA(0, "Alignment", 2);
+            LODOP.ADD_PRINT_LINE(4.7+table_hegth+"mm","13mm",4.7+table_hegth+"mm","193mm",0,1);//备注上横线
+            LODOP.ADD_PRINT_LINE(9.4+table_hegth+"mm","13mm",9.4+table_hegth+"mm","193mm",0,1);//最后一横线
+            LODOP.ADD_PRINT_LINE(table_hegth+"mm", "13mm", table_hegth+9.4+"mm", "13mm", 0, 1);// 最左竖线
+            LODOP.ADD_PRINT_LINE(table_hegth+"mm", "160mm", 4.7+table_hegth+"mm", "160mm", 0, 1);// 单价后竖线
+            LODOP.ADD_PRINT_LINE(table_hegth+"mm", "170mm", 4.7+table_hegth+"mm", "170mm", 0, 1);// 数量后竖线
+            LODOP.ADD_PRINT_LINE(table_hegth+"mm", "193mm", table_hegth+9.4+"mm", "193mm", 0, 1);// 最右竖线
+
+               if((trheight+9.4+newHeight)%fenyeSize&lt;=fenyeSize&amp;&amp;(trheight+newHeight+9.4)%fenyeSize>=(fenyeSize-6)){
+                        LODOP.NewPage();
+                       lastheght=0;
+                       table_hegth=0;
+
+              }
+      }
+
+
+            // 最下显示订单信息
+
+
+            var moneyWeight=0;
+            LODOP.ADD_PRINT_TEXT(lastheght+table_hegth+"mm","12.54mm","27.81mm","5.37mm","订单总金额：");
+            LODOP.ADD_PRINT_TEXT(lastheght+table_hegth+"mm","30mm","27.81mm","5.37mm",'555666'+"元");
+            moneyWeight+=getByteLen('555666')*1.7+4;
+            LODOP.ADD_PRINT_TEXT(lastheght+table_hegth+"mm",30+moneyWeight+"mm","3mm","5.37mm","-");
+                LODOP.ADD_PRINT_TEXT(lastheght+table_hegth+"mm",30+3+moneyWeight+"mm","18.55mm","5.37mm","价保返利：");
+            LODOP.ADD_PRINT_TEXT(lastheght+table_hegth+"mm",30+17+moneyWeight+"mm","27.81mm","5.37mm","7667元");
+                moneyWeight+=getByteLen('7667')*1.7+4;
+            LODOP.ADD_PRINT_TEXT(lastheght+table_hegth+"mm",30+17+moneyWeight+"mm","3mm","5.37mm","-");
+                LODOP.ADD_PRINT_TEXT(lastheght+table_hegth+"mm",30+20+moneyWeight+"mm","17.81mm","5.37mm","预付款：");
+            LODOP.ADD_PRINT_TEXT(lastheght+table_hegth+"mm",30+31+moneyWeight+"mm","27.81mm","5.37mm","7887元");
+               moneyWeight+=getByteLen('7887')*1.7+4;
+            LODOP.ADD_PRINT_TEXT(lastheght+table_hegth+"mm",30+31+moneyWeight+"mm","3mm","5.37mm","-");
+                LODOP.ADD_PRINT_TEXT(lastheght+table_hegth+"mm",30+34+moneyWeight+"mm","17.81mm","5.37mm","账期：");
+            LODOP.ADD_PRINT_TEXT(lastheght+table_hegth+"mm",30+43+moneyWeight+"mm","17.81mm","5.37mm","999元");
+            moneyWeight+=getByteLen('787')*1.7+4;
+            LODOP.ADD_PRINT_TEXT(lastheght+table_hegth+"mm",30+43+moneyWeight+"mm","3mm","5.37mm","-");
+                LODOP.ADD_PRINT_TEXT(lastheght+table_hegth+"mm",30+46+moneyWeight+"mm","17.81mm","5.37mm","优惠券：");
+            LODOP.ADD_PRINT_TEXT(lastheght+table_hegth+"mm",30+57+moneyWeight+"mm","17.81mm","5.37mm","888元");
+        moneyWeight+=getByteLen('787')*1.7+4;
+            LODOP.ADD_PRINT_TEXT(lastheght+table_hegth+"mm",30+57+moneyWeight+"mm","3mm","5.37mm","-");
+                LODOP.ADD_PRINT_TEXT(lastheght+table_hegth+"mm",30+60+moneyWeight+"mm","17.81mm","5.37mm","预定金：");
+            LODOP.ADD_PRINT_TEXT(lastheght+table_hegth+"mm",30+71+moneyWeight+"mm","17.81mm","5.37mm","555元");
+        moneyWeight+=getByteLen('788')*1.7+4;
+            LODOP.ADD_PRINT_TEXT(lastheght+table_hegth+"mm",30+71+moneyWeight+"mm","3mm","5.37mm","=");
+                LODOP.ADD_PRINT_TEXT(lastheght+table_hegth+"mm",30+74+moneyWeight+"mm","18.55mm","5.37mm","线上支付：");
+            LODOP.ADD_PRINT_TEXT(lastheght+table_hegth+"mm",30+88+moneyWeight+"mm","17.81mm","5.37mm","555元");
+
+            if(whichOne=="hn"||whichOne=="jx"){
+               if((lastheght+table_hegth+5)%fenyeSize&lt;=fenyeSize&amp;&amp;(lastheght+table_hegth+5)%fenyeSize>=(fenyeSize-6)){
+                        LODOP.NewPage();
+                       lastheght=0;
+                       table_hegth=0;
+
+              }
+                LODOP.ADD_PRINT_TEXT(lastheght+table_hegth+5+"mm","12.54mm","27.81mm","5.37mm","制单人：");
+                LODOP.ADD_PRINT_TEXT(lastheght+table_hegth+5+"mm","62.54mm","27.81mm","5.37mm","配货员：");
+                LODOP.ADD_PRINT_TEXT(lastheght+table_hegth+5+"mm","112.54mm","27.81mm","5.37mm","检验员：");
+                LODOP.ADD_PRINT_TEXT(lastheght+table_hegth+5+"mm","162.54mm","27.81mm","5.37mm","包装员：");
+            }
+             LODOP.NewPage();
+        }
+LODOP.PRINT_SETUP();
+};
+
+function getByteLen(val) {
+    var len = 0;
+    for (var i = 0; i &lt; val.length; i++) {
+        if (val[i].match(/[^\x00-\xff]/ig) != null) //全角
+            len += 2;
+        else
+            len += 1;
+    }
+    return len;
+}
+</script>
+<body>
+进入<a href="javascript:;" onclick="javascript:CreatePrintPage();LODOP.PRINT_DESIGN();">模板设计</a><br><br>
+进入<a href="javascript:;" onclick="javascript:CreatePrintPage();">模板的打印预览</a>
+</body>
+</html>
